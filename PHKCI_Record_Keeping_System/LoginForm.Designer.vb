@@ -30,12 +30,10 @@ Partial Class LoginForm
         Me.tbPassword = New System.Windows.Forms.TextBox()
         Me.pbLogin = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.pbLogo = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.pbLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -97,7 +95,7 @@ Partial Class LoginForm
         '
         'pbLogin
         '
-        Me.pbLogin.Location = New System.Drawing.Point(445, 124)
+        Me.pbLogin.Location = New System.Drawing.Point(435, 73)
         Me.pbLogin.Name = "pbLogin"
         Me.pbLogin.Size = New System.Drawing.Size(341, 326)
         Me.pbLogin.TabIndex = 7
@@ -118,14 +116,6 @@ Partial Class LoginForm
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         '
-        'pbLogo
-        '
-        Me.pbLogo.Location = New System.Drawing.Point(445, 124)
-        Me.pbLogo.Name = "pbLogo"
-        Me.pbLogo.Size = New System.Drawing.Size(97, 95)
-        Me.pbLogo.TabIndex = 7
-        Me.pbLogo.TabStop = False
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -139,11 +129,11 @@ Partial Class LoginForm
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.Label5.Location = New System.Drawing.Point(445, 76)
+        Me.Label5.Location = New System.Drawing.Point(426, 422)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(355, 28)
+        Me.Label5.Size = New System.Drawing.Size(372, 28)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "PHKCI Records Management System"
+        Me.Label5.Text = "PRAYING HANDS KIDDIE CENTER INC."
         '
         'LoginForm
         '
@@ -151,17 +141,15 @@ Partial Class LoginForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(817, 478)
-        Me.Controls.Add(Me.pbLogo)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.pbLogin)
         Me.Name = "LoginForm"
-        Me.Text = "Login"
+        Me.Text = "PHKCI Records Management System"
         CType(Me.pbLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -177,5 +165,4 @@ Partial Class LoginForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents pbLogo As PictureBox
 End Class

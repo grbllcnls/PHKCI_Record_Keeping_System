@@ -11,7 +11,12 @@ Public Class HomeForm
         ' Initialize the connection
         connection = New OleDbConnection(connectionString)
         dgvStudent.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right Or AnchorStyles.Bottom
-        btnAddStudent.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnAdd.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnEdit.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnUpdate.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnDelete.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        tbSearch.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnSearch.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ' Load student records into DataGridView
         LoadStudentRecords()
     End Sub
@@ -49,8 +54,14 @@ Public Class HomeForm
 
     Private Sub LoadForm()
         Me.Icon = New Icon("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo_ico.ico")
+        pbLogo.Image = Image.FromFile("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo_transparent.png")
+        pbLogo.SizeMode = PictureBoxSizeMode.StretchImage
+        pbLogo.Anchor = AnchorStyles.Top Or AnchorStyles.Left
 
+    End Sub
 
+    Private Sub tbSearch_TextChanged(sender As Object, e As EventArgs) Handles tbSearch.Click
+        tbSearch.Clear()
     End Sub
 
 

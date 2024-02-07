@@ -60,11 +60,11 @@ Public Class LoginForm
     Private Sub LoadForm()
         Me.Icon = New Icon("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo_ico.ico")
 
-        pbLogin.Image = Image.FromFile("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\login.png")
+        pbLogin.Image = Image.FromFile("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo_transparent.png")
         pbLogin.SizeMode = PictureBoxSizeMode.StretchImage
 
-        pbLogo.Image = Image.FromFile("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo.png")
-        pbLogo.SizeMode = PictureBoxSizeMode.StretchImage
+        'pbLogo.Image = Image.FromFile("C:\Users\Gabrielle\source\repos\PHKCI_Record_Keeping_System\PHKCI_Record_Keeping_System\Images\logo.png")
+        'pbLogo.SizeMode = PictureBoxSizeMode.StretchImage
 
         Dim screenWidth As Integer = Screen.PrimaryScreen.WorkingArea.Width
         Dim screenHeight As Integer = Screen.PrimaryScreen.WorkingArea.Height
@@ -82,6 +82,5 @@ Public Class LoginForm
 
 
     End Sub
-
 
 End Class
