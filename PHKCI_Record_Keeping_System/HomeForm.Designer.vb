@@ -29,8 +29,9 @@ Partial Class HomeForm
         Me.tbSearch = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
+        Me.cbGrade = New System.Windows.Forms.ComboBox()
+        Me.btnRefresh = New System.Windows.Forms.Button()
         CType(Me.dgvStudent, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,6 +40,7 @@ Partial Class HomeForm
         '
         Me.dgvStudent.BackgroundColor = System.Drawing.Color.SteelBlue
         Me.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvStudent.GridColor = System.Drawing.Color.MidnightBlue
         Me.dgvStudent.Location = New System.Drawing.Point(28, 122)
         Me.dgvStudent.Name = "dgvStudent"
         Me.dgvStudent.RowHeadersWidth = 51
@@ -85,7 +87,7 @@ Partial Class HomeForm
         'tbSearch
         '
         Me.tbSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.tbSearch.Location = New System.Drawing.Point(660, 69)
+        Me.tbSearch.Location = New System.Drawing.Point(660, 77)
         Me.tbSearch.Name = "tbSearch"
         Me.tbSearch.Size = New System.Drawing.Size(172, 30)
         Me.tbSearch.TabIndex = 4
@@ -96,7 +98,7 @@ Partial Class HomeForm
         Me.btnSearch.BackColor = System.Drawing.Color.SteelBlue
         Me.btnSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSearch.Location = New System.Drawing.Point(854, 65)
+        Me.btnSearch.Location = New System.Drawing.Point(854, 73)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(100, 36)
         Me.btnSearch.TabIndex = 5
@@ -115,16 +117,6 @@ Partial Class HomeForm
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(438, 69)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 23)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Filter"
-        '
         'pbLogo
         '
         Me.pbLogo.Location = New System.Drawing.Point(28, 12)
@@ -133,14 +125,36 @@ Partial Class HomeForm
         Me.pbLogo.TabIndex = 12
         Me.pbLogo.TabStop = False
         '
+        'cbGrade
+        '
+        Me.cbGrade.FormattingEnabled = True
+        Me.cbGrade.Location = New System.Drawing.Point(287, 81)
+        Me.cbGrade.Name = "cbGrade"
+        Me.cbGrade.Size = New System.Drawing.Size(151, 28)
+        Me.cbGrade.TabIndex = 13
+        Me.cbGrade.Text = "--SELECT GRADE--"
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnRefresh.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.btnRefresh.Location = New System.Drawing.Point(444, 79)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(79, 30)
+        Me.btnRefresh.TabIndex = 14
+        Me.btnRefresh.Text = "Refresh"
+        Me.btnRefresh.UseVisualStyleBackColor = False
+        '
         'HomeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(1189, 663)
+        Me.Controls.Add(Me.btnRefresh)
+        Me.Controls.Add(Me.cbGrade)
         Me.Controls.Add(Me.pbLogo)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.tbSearch)
@@ -164,6 +178,7 @@ Partial Class HomeForm
     Friend WithEvents tbSearch As TextBox
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnUpdate As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents pbLogo As PictureBox
+    Friend WithEvents cbGrade As ComboBox
+    Friend WithEvents btnRefresh As Button
 End Class
